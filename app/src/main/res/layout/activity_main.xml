@@ -6,36 +6,62 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/icon_app"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/ic_icon_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_get_started"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/nunito_600"
+        android:text="@string/get_started_desc"
+        android:textAlignment="textStart"
+        android:textColor="@color/black_custom"
+        android:textSize="28sp"
+        app:layout_constraintTop_toBottomOf="@id/icon_app" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_get_started"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/blue_custom"
+        android:fontFamily="@font/nunito_600"
+        android:text="@string/btn_get_started"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/text_get_started" />
 
-        <ImageView
-            android:id="@+id/icon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_icon_main"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:fontFamily="@font/nunito_600"
-            android:text="@string/app_name"
-            android:textColor="@color/black_custom"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/icon" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_shape_stroke"
+        android:fontFamily="@font/nunito_600"
+        android:shadowRadius="@integer/material_motion_duration_long_2"
+        android:text="@string/btn_sign_in"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@color/gray_custom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_get_started" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
