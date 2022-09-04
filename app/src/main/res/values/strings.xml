@@ -18,6 +18,8 @@
     <string name="upload_photo">Upload Photo</string>
     <string name="upload_continue">Upload and Continue</string>
     <string name="skip"><u>Skip for this</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

@@ -13,9 +13,11 @@
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/drawable/ic_upload_photo.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/activity_get_started.xml" value="0.2" />
-        <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/activity_sign_in.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/activity_sign_up.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/fragment_get_started.xml" value="0.26614583333333336" />
+        <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/fragment_sign_in.xml" value="0.26614583333333336" />
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/fragment_sign_up.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/fragment_sign_up_photo.xml" value="0.176" />
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/splash_screen.xml" value="0.2" />

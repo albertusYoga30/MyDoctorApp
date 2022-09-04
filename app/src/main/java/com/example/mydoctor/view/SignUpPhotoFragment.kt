@@ -5,8 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.lifecycle.ViewModelProvider
-import com.example.mydoctor.R
+import android.widget.Toast
+import androidx.navigation.fragment.findNavController
+import com.example.mydoctor.databinding.FragmentSignUpPhotoBinding
+import com.example.mydoctor.viewModel.SignUpViewModel
 
 
 class SignUpPhotoFragment : Fragment() {
@@ -15,20 +17,22 @@ class SignUpPhotoFragment : Fragment() {
         fun newInstance() = SignUpPhotoFragment
     }
 
+    private lateinit var binding: FragmentSignUpPhotoBinding
+
     private lateinit var viewModel: SignUpViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_sign_up_photo, container, false)
+        binding = FragmentSignUpPhotoBinding.inflate(layoutInflater)
+
+        binding.back.setOnClickListener { this.findNavController().navigateUp() }
+        binding.buttonUploadContinue.setOnClickListener { }
+        binding.skip.setOnClickListener {
+            Toast.makeText(context, "nice progress", Toast.LENGTH_LONG).show()
+        }
+
+        return binding.root
     }
-
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(SignUpViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
-
-
 }

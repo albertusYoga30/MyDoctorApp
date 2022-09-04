@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.SignInActivity">
+    tools:context=".view.SignInFragment">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/icon_main_sign_in"
@@ -47,9 +47,9 @@
         android:id="@+id/input_email_sign_in"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:background="@drawable/button_shape_stroke"
         android:layout_marginHorizontal="40dp"
         android:layout_marginTop="6dp"
+        android:background="@drawable/button_shape_stroke"
         android:inputType="textEmailAddress"
         app:layout_constraintTop_toBottomOf="@+id/text_view_email" />
 
@@ -71,8 +71,8 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_marginHorizontal="40dp"
-        android:background="@drawable/button_shape_stroke"
         android:layout_marginTop="6dp"
+        android:background="@drawable/button_shape_stroke"
         android:inputType="textPassword"
         app:layout_constraintTop_toBottomOf="@+id/text_view_password" />
 
@@ -103,6 +103,7 @@
         app:layout_constraintTop_toBottomOf="@id/forgot_password" />
 
     <TextView
+        android:id="@+id/text_sign_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
