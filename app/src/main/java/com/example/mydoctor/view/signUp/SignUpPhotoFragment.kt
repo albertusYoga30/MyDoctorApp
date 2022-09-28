@@ -29,10 +29,13 @@ class SignUpPhotoFragment : Fragment() {
 
         binding.back.setOnClickListener { this.findNavController().navigateUp() }
         binding.buttonUploadContinue.setOnClickListener { }
-        binding.skip.setOnClickListener {
-            Toast.makeText(context, "nice progress", Toast.LENGTH_LONG).show()
-        }
+//        binding.skip.setOnClickListener { signIn() }
 
         return binding.root
     }
+
+//    private fun signIn() {
+//        val action = SignUpPhotoFragmentDirections.actionSignUpPhotoFragmentToSignInFragment()
+//        this.findNavController().navigate(action)
+//    }
 }
