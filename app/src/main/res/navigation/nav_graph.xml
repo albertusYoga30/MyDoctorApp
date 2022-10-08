@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/signUpFragment"
-        android:name="com.example.mydoctor.view.SignUpFragment"
+        android:name="com.example.mydoctor.ui.signUp.SignUpFragment"
         android:label="fragment_sign_up"
         tools:layout="@layout/fragment_sign_up">
         <action
@@ -15,12 +15,16 @@
     </fragment>
     <fragment
         android:id="@+id/signUpPhotoFragment"
-        android:name="com.example.mydoctor.view.SignUpPhotoFragment"
+        android:name="com.example.mydoctor.ui.signUp.SignUpPhotoFragment"
         android:label="fragment_sign_up_photo"
-        tools:layout="@layout/fragment_sign_up_photo" />
+        tools:layout="@layout/fragment_sign_up_photo" >
+        <action
+            android:id="@+id/action_signUpPhotoFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
     <fragment
         android:id="@+id/signInFragment"
-        android:name="com.example.mydoctor.view.SignInFragment"
+        android:name="com.example.mydoctor.ui.signIn.SignInFragment"
         android:label="fragment_sign_in"
         tools:layout="@layout/fragment_sign_in">
         <action
@@ -29,7 +33,7 @@
     </fragment>
     <fragment
         android:id="@+id/getStartedFragment"
-        android:name="com.example.mydoctor.view.GetStartedFragment"
+        android:name="com.example.mydoctor.ui.getStarted.GetStartedFragment"
         android:label="fragment_get_started"
         tools:layout="@layout/fragment_get_started">
         <action

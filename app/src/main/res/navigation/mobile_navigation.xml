@@ -6,20 +6,30 @@
     app:startDestination="@id/navigation_doctor">
 
     <fragment
-        android:id="@+id/navigation_doctor"
-        android:name="com.example.mydoctor.view.homeNavigation.ui.doctor.DoctorFragment"
-        android:label="@string/title_doctor"
+        android:id="@+id/navigation_hospitals"
+        android:name="com.example.mydoctor.ui.homeNavigation.hospitals.HospitalsFragment"
+
+        android:label="@string/title_hospitals"
         tools:layout="@layout/fragment_hospitals" />
 
     <fragment
-        android:id="@+id/navigation_hospitals"
-        android:name="com.example.mydoctor.view.homeNavigation.ui.hospitals.HospitalsFragment"
-        android:label="@string/title_hospitals"
-        tools:layout="@layout/fragment_doctor" />
+        android:id="@+id/navigation_doctor"
+        android:label="@string/title_doctor"
+        android:name="com.example.mydoctor.ui.homeNavigation.doctor.DoctorFragment"
+        tools:layout="@layout/fragment_doctor" >
+        <action
+            android:id="@+id/action_navigation_doctor_to_profile"
+            app:destination="@id/profile" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_messages"
-        android:name="com.example.mydoctor.view.homeNavigation.ui.messages.MessagesFragment"
+        android:name="com.example.mydoctor.ui.homeNavigation.messages.MessagesFragment"
         android:label="@string/title_messages"
         tools:layout="@layout/fragment_messages" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.mydoctor.ui.profile.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>

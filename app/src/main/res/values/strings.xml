@@ -22,9 +22,42 @@
     <!-- Bottom navigation -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_home_navigation">HomeNavigationActivity</string>
-    <string name="title_doctor">Doctor</string>
+    <string name="title_doctor">Doctors</string>
     <string name="title_hospitals">Hospitals</string>
     <string name="title_messages">Messages</string>
+
+    <!-- Doctor navigation -->
+    <string name="doctor_page">Mau konsultasi dengan \nsiapa hari ini ?</string>
+    <string name="title_top_rated_doctor">Top Rated Doctors</string>
+    <string name="title_good_news">Good News</string>
+    <string name="title_doctor_specialist">Saya butuh \n<b>doctor...</b></string>
+    <string name="title_news">this is a title for good news and soon will be</string>
+    <string name="date_news">date news</string>
+    <string name="list_doctor_specialist">Chose Yours ....</string>
+    <string name="doctor_name">Doctor name</string>
+    <string name="doctor_gender">Doctor gender</string>
+
+
+
+    <!-- profile section    -->
+    <string name="text_profile">Profile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="last_update">Last updated yesterday</string>
+    <string name="language">Language</string>
+    <string name="avail_language">Available 12 Language</string>
+    <string name="rate">Give Us Rate</string>
+    <string name="rate_dec">On Google Play Store</string>
+    <string name="help">Help Center</string>
+    <string name="help_desc">Read our guidelines</string>
+    <string name="save_edit">Save Profile</string>
+
+
+
+    <!-- Hospitals Navigation -->
+    <string name="hospital_page">Nearby Hospitals</string>
+    <string name="available_hospitals">available</string>
+
+
 
 
 </resources>

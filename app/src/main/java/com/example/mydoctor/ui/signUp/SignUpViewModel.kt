@@ -1,9 +1,7 @@
-package com.example.mydoctor.view.signUp
+package com.example.mydoctor.ui.signUp
 
-import android.util.Patterns
 import androidx.lifecycle.ViewModel
 import com.example.mydoctor.databinding.FragmentSignUpBinding
-import org.intellij.lang.annotations.Pattern
 
 class SignUpViewModel : ViewModel() {
 

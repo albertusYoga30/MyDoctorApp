@@ -1,4 +1,4 @@
-package com.example.mydoctor.ui
+package com.example.mydoctor.ui.getStarted
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

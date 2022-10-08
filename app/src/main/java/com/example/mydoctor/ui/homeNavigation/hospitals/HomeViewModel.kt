@@ -1,4 +1,4 @@
-package com.example.mydoctor.view.homeNavigation.ui.hospitals
+package com.example.mydoctor.ui.homeNavigation.hospitals
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

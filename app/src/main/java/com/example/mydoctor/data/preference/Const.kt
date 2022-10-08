@@ -1,4 +1,4 @@
-package com.example.mydoctor.const
+package com.example.mydoctor.data.preference
 
 object Const {
     const val USER_ID = "USER_ID"

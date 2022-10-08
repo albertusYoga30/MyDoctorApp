@@ -1,4 +1,4 @@
-package com.example.mydoctor.view.homeNavigation.ui.messages
+package com.example.mydoctor.ui.homeNavigation.messages
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

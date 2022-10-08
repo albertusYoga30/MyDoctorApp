@@ -1,17 +1,15 @@
-package com.example.mydoctor.view.signUp
+package com.example.mydoctor.ui.signUp
 
 import android.os.Bundle
 import android.util.Patterns
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.mydoctor.databinding.FragmentSignUpBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
 
 
 class SignUpFragment : Fragment() {

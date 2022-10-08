@@ -13,6 +13,5 @@
     <color name="gray_custom">#7D8797</color>
     <color name="gray_custom_light">#E9E9E9</color>
     <color name="disable_button">#EDEEF0</color>
-
-
+    <color name="blue_custom_light">#EDFCFD</color>
 </resources>

@@ -1,4 +1,4 @@
-package com.example.mydoctor.view.signIn
+package com.example.mydoctor.ui.signIn
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,7 +10,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.mydoctor.databinding.FragmentSignInBinding
-import com.example.mydoctor.view.homeNavigation.HomeNavigationActivity
+import com.example.mydoctor.ui.homeNavigation.HomeNavigationActivity
 import com.google.firebase.auth.FirebaseAuth
 
 class SignInFragment : Fragment() {

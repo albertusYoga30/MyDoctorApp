@@ -1,4 +1,8 @@
 package com.example.mydoctor.data
 
-class User {
-}
+data class User(
+    val fullName: String,
+    val job: String,
+    val email: String,
+    val picture: String? =null
+)

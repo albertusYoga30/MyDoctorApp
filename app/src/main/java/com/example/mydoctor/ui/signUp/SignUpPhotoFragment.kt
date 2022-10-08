@@ -1,4 +1,4 @@
-package com.example.mydoctor.view.signUp
+package com.example.mydoctor.ui.signUp
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

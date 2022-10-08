@@ -1,18 +1,13 @@
-package com.example.mydoctor.view.homeNavigation.ui.doctor
+package com.example.mydoctor.ui.homeNavigation.doctor
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.mydoctor.databinding.FragmentDoctorBinding
-import com.example.mydoctor.view.homeNavigation.HomeNavigationActivity
-import com.example.mydoctor.view.homeNavigation.ui.doctor.DoctorFragmentDirections
-import com.example.mydoctor.view.signUp.SignUpFragmentDirections
 
 class DoctorFragment : Fragment() {
 

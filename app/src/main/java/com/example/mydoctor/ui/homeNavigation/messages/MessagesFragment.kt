@@ -1,4 +1,4 @@
-package com.example.mydoctor.view.homeNavigation.ui.messages
+package com.example.mydoctor.ui.homeNavigation.messages
 
 import android.os.Bundle
 import android.view.LayoutInflater

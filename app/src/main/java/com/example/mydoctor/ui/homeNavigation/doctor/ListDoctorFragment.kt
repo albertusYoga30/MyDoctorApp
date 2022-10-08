@@ -1,4 +1,4 @@
-package com.example.mydoctor.view.homeNavigation.ui.doctor
+package com.example.mydoctor.ui.homeNavigation.doctor
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle

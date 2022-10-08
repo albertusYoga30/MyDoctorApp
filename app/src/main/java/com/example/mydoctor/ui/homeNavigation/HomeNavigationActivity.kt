@@ -1,4 +1,4 @@
-package com.example.mydoctor.view.homeNavigation
+package com.example.mydoctor.ui.homeNavigation
 
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView

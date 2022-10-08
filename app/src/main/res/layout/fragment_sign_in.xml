@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.SignInFragment">
+    tools:context=".ui.signIn.SignInFragment">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/icon_main_sign_in"
@@ -47,6 +47,7 @@
         android:id="@+id/input_email_sign_in"
         android:layout_width="match_parent"
         android:layout_height="45dp"
+        android:paddingHorizontal="10dp"
         android:layout_marginHorizontal="40dp"
         android:layout_marginTop="6dp"
         android:background="@drawable/button_shape_stroke"
@@ -70,6 +71,7 @@
         android:id="@+id/input_password_sign_in"
         android:layout_width="match_parent"
         android:layout_height="45dp"
+        android:paddingHorizontal="10dp"
         android:layout_marginHorizontal="40dp"
         android:layout_marginTop="6dp"
         android:background="@drawable/button_shape_stroke"

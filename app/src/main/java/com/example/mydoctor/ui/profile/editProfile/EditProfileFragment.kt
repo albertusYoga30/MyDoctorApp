@@ -1,4 +1,4 @@
-package com.example.mydoctor.view.profile.editProfile
+package com.example.mydoctor.ui.profile.editProfile
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
