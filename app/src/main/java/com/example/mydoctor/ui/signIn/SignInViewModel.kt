@@ -1,4 +1,4 @@
-package com.example.mydoctor.viewModel
+package com.example.mydoctor.view.signIn
 
 import androidx.lifecycle.ViewModel
 

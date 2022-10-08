@@ -1,4 +1,4 @@
-package com.example.mydoctor.view
+package com.example.mydoctor.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

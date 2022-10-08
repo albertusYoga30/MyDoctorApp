@@ -1,4 +1,4 @@
-package com.example.mydoctor.view
+package com.example.mydoctor.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.mydoctor.databinding.FragmentGetStartedBinding
+import com.example.mydoctor.ui.signIn.SignInFragment
 
 
 class GetStartedFragment : Fragment() {

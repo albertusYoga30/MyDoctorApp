@@ -1,4 +1,4 @@
-package com.example.mydoctor.viewModel
+package com.example.mydoctor.view.signUp
 
 import android.util.Patterns
 import androidx.lifecycle.ViewModel
@@ -12,6 +12,4 @@ class SignUpViewModel : ViewModel() {
     fun inputFullName(name: String){
 
     }
-
-
 }

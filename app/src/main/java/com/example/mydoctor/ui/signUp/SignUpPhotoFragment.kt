@@ -1,14 +1,12 @@
-package com.example.mydoctor.view
+package com.example.mydoctor.view.signUp
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.mydoctor.databinding.FragmentSignUpPhotoBinding
-import com.example.mydoctor.viewModel.SignUpViewModel
 
 
 class SignUpPhotoFragment : Fragment() {
@@ -29,13 +27,13 @@ class SignUpPhotoFragment : Fragment() {
 
         binding.back.setOnClickListener { this.findNavController().navigateUp() }
         binding.buttonUploadContinue.setOnClickListener { }
-//        binding.skip.setOnClickListener { signIn() }
+        binding.skip.setOnClickListener { signIn() }
 
         return binding.root
     }
 
-//    private fun signIn() {
-//        val action = SignUpPhotoFragmentDirections.actionSignUpPhotoFragmentToSignInFragment()
-//        this.findNavController().navigate(action)
-//    }
+    private fun signIn() {
+        val action = SignUpPhotoFragmentDirections.actionSignUpPhotoFragmentToSignInFragment()
+        this.findNavController().navigate(action)
+    }
 }

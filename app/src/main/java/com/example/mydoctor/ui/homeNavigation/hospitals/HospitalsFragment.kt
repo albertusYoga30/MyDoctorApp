@@ -1,4 +1,4 @@
-package com.example.mydoctor.view.homeNavigation.ui.doctor
+package com.example.mydoctor.view.homeNavigation.ui.hospitals
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.mydoctor.databinding.FragmentDoctorBinding
+import com.example.mydoctor.databinding.FragmentHospitalsBinding
 
-class DoctorFragment : Fragment() {
+class HospitalsFragment : Fragment() {
 
-    private var _binding: FragmentDoctorBinding? = null
+    private var _binding: FragmentHospitalsBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,16 +22,16 @@ class DoctorFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val dashboardViewModel =
-            ViewModelProvider(this).get(DashboardViewModel::class.java)
+        val homeViewModel =
+            ViewModelProvider(this).get(HomeViewModel::class.java)
 
-        _binding = FragmentDoctorBinding.inflate(inflater, container, false)
+        _binding = FragmentHospitalsBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textDashboard
-        dashboardViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
+//        val textView: TextView = binding.textHome
+//        homeViewModel.text.observe(viewLifecycleOwner) {
+//            textView.text = it
+//        }
         return root
     }
 
