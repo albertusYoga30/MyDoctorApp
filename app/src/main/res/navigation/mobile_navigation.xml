@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/navigation_doctor">
+    app:startDestination="@id/navigation_home">
 
     <fragment
         android:id="@+id/navigation_hospitals"
@@ -13,13 +13,16 @@
         tools:layout="@layout/fragment_hospitals" />
 
     <fragment
-        android:id="@+id/navigation_doctor"
-        android:label="@string/title_doctor"
-        android:name="com.example.mydoctor.ui.homeNavigation.doctor.DoctorFragment"
-        tools:layout="@layout/fragment_doctor" >
+        android:id="@+id/navigation_home"
+        android:label="@string/title_home"
+        android:name="com.example.mydoctor.ui.homeNavigation.home.HomeFragment"
+        tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_navigation_doctor_to_profile"
             app:destination="@id/profile" />
+        <action
+            android:id="@+id/action_navigation_doctor_to_listDoctorFragment"
+            app:destination="@id/listDoctorFragment" />
     </fragment>
 
     <fragment
@@ -29,7 +32,30 @@
         tools:layout="@layout/fragment_messages" />
     <fragment
         android:id="@+id/profile"
-        android:name="com.example.mydoctor.ui.profile.Profile"
+        android:name="com.example.mydoctor.ui.profile.ProfileFragment"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profile_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.mydoctor.ui.profile.editProfile.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
+    <fragment
+        android:id="@+id/listDoctorFragment"
+        android:name="com.example.mydoctor.ui.homeNavigation.home.ListDoctorFragment"
+        android:label="fragment_list_doctor"
+        tools:layout="@layout/fragment_list_doctor" >
+        <action
+            android:id="@+id/action_listDoctorFragment_to_doctorProfile"
+            app:destination="@id/doctorProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/doctorProfile"
+        android:name="com.example.mydoctor.ui.homeNavigation.home.DoctorProfile"
+        android:label="fragment_doctor_profile"
+        tools:layout="@layout/fragment_doctor_profile" />
 </navigation>

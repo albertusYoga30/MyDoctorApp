@@ -8,17 +8,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.mydoctor.databinding.FragmentSignUpBinding
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.DatabaseReference
 
 
 class SignUpFragment : Fragment() {
 
     private lateinit var binding: FragmentSignUpBinding
-    private lateinit var mAuth: FirebaseAuth
-    private lateinit var databaseReference: DatabaseReference
-//    private lateinit var viewModel: SignUpViewModel
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

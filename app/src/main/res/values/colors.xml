@@ -14,4 +14,6 @@
     <color name="gray_custom_light">#E9E9E9</color>
     <color name="disable_button">#EDEEF0</color>
     <color name="blue_custom_light">#EDFCFD</color>
+    <color name="color_star">#F8B459</color>
+
 </resources>

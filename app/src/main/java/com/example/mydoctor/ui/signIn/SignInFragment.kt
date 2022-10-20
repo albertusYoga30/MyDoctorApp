@@ -1,35 +1,52 @@
 package com.example.mydoctor.ui.signIn
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Patterns
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
+import androidx.core.widget.doAfterTextChanged
 import androidx.navigation.fragment.findNavController
+import com.example.mydoctor.data.preference.Const
 import com.example.mydoctor.databinding.FragmentSignInBinding
 import com.example.mydoctor.ui.homeNavigation.HomeNavigationActivity
-import com.google.firebase.auth.FirebaseAuth
 
 class SignInFragment : Fragment() {
     private lateinit var binding: FragmentSignInBinding
-    private lateinit var mAuth: FirebaseAuth
-//    private lateinit var viewModel: SignInViewModel
+    private lateinit var viewModel: SignInViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentSignInBinding.inflate(layoutInflater)
-        mAuth = FirebaseAuth.getInstance()
-        binding.textSignUp.setOnClickListener { signUp() }
+        binding = FragmentSignInBinding.inflate(layoutInflater, container, false)
+        val root: View = binding.root
+
+        val sharedPreferences: SharedPreferences =
+            requireContext().getSharedPreferences(Const.PREF_NAME, Context.MODE_PRIVATE)
+
+        viewModel = SignInViewModel(sharedPreferences)
+
+        viewModel.isButtonEnable.observe(viewLifecycleOwner) { binding.buttonSignIn.isEnabled = it }
+
+        binding.inputEmailSignIn.doAfterTextChanged {
+            val email = it.toString()
+            viewModel.onChangeEmail(email)
+        }
+
+        binding.etPassword.doAfterTextChanged {
+            val password = it.toString()
+            viewModel.onChangePassword(password)
+        }
+
         binding.buttonSignIn.setOnClickListener {
 
             val email = binding.inputEmailSignIn.text.toString()
-            val password = binding.inputPasswordSignIn.text.toString()
-
+            val password = binding.etPassword.text.toString()
 
             if (email.isEmpty()) {
                 binding.inputEmailSignIn.error = "Email is required!"
@@ -44,34 +61,27 @@ class SignInFragment : Fragment() {
             }
 
             if (password.isEmpty()) {
-                binding.inputPasswordSignIn.error = "Password is required!"
-                binding.inputPasswordSignIn.requestFocus()
+                binding.etPassword.error = "Password is required!"
+                binding.etPassword.requestFocus()
                 return@setOnClickListener
             }
 
             if (password.length < 6) {
-                binding.inputPasswordSignIn.error = "Min password length should be 6 character"
-                binding.inputPasswordSignIn.requestFocus()
+                binding.etPassword.error = "Min password length should be 6 character"
+                binding.etPassword.requestFocus()
                 return@setOnClickListener
             }
 
-            loginUser(email, password)
+            loginUser()
 
         }
-
-        return binding.root
+        binding.textSignUp.setOnClickListener { signUp() }
+        return root
     }
 
-    private fun loginUser(email: String, password: String) {
-////        mAuth.signInWithEmailAndPassword(email, password)
-//            .addOnCompleteListener {
-//                if (it.isSuccessful) {
-                    Toast.makeText(context, "Login successful", Toast.LENGTH_SHORT).show()
-                    goToHome()
-//                } else {
-//                    Toast.makeText(context, "Login failed", Toast.LENGTH_SHORT).show()
-//                }
-//            }
+    private fun loginUser() {
+        viewModel.doSignIn()
+        goToHome()
     }
 
     private fun signUp() {

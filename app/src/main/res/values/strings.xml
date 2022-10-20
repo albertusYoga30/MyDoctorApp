@@ -22,7 +22,7 @@
     <!-- Bottom navigation -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_home_navigation">HomeNavigationActivity</string>
-    <string name="title_doctor">Doctors</string>
+    <string name="title_home">Home</string>
     <string name="title_hospitals">Hospitals</string>
     <string name="title_messages">Messages</string>
 
@@ -34,9 +34,15 @@
     <string name="title_news">this is a title for good news and soon will be</string>
     <string name="date_news">date news</string>
     <string name="list_doctor_specialist">Chose Yours ....</string>
+
+    <!-- Detail Doctor   -->
     <string name="doctor_name">Doctor name</string>
     <string name="doctor_gender">Doctor gender</string>
-
+    <string name="doctor_specialist">Specialist</string>
+    <string name="doctor_alumnus">Alumnus</string>
+    <string name="work_place">Tempat Praktik</string>
+    <string name="no_str">No. STR</string>
+    <string name="btn_consultation">Start Consultation</string>
 
 
     <!-- profile section    -->
@@ -51,13 +57,13 @@
     <string name="help_desc">Read our guidelines</string>
     <string name="save_edit">Save Profile</string>
 
+    <!-- Messages section -->
+    <string name="last_messages">last messages</string>
 
 
     <!-- Hospitals Navigation -->
     <string name="hospital_page">Nearby Hospitals</string>
     <string name="available_hospitals">available</string>
-
-
 
 
 </resources>

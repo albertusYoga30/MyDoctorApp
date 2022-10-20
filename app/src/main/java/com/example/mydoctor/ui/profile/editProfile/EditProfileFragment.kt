@@ -6,9 +6,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.mydoctor.R
+import com.example.mydoctor.databinding.FragmentEditProfileBinding
 
 class EditProfileFragment : Fragment() {
+    private lateinit var binding: FragmentEditProfileBinding
 
     companion object {
         fun newInstance() = EditProfileFragment()
@@ -20,13 +23,12 @@ class EditProfileFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_edit_profile, container, false)
-    }
+        binding = FragmentEditProfileBinding.inflate(layoutInflater, container, false)
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(EditProfileViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
+        binding.buttonSave.isEnabled = false
 
+        binding.backNav.setOnClickListener { this.findNavController().navigateUp() }
+        return binding.root
+
+    }
 }

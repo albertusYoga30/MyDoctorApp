@@ -8,7 +8,9 @@
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/drawable/button_shape.xml" value="0.196" />
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/drawable/button_shape_stroke.xml" value="0.196" />
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/drawable/ic_arrow_back.xml" value="0.196" />
+        <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/drawable/ic_doctors.xml" value="0.107" />
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/drawable/ic_good_news.xml" value="0.2305" />
+        <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/drawable/ic_home.xml" value="0.107" />
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/drawable/ic_icon.xml" value="0.1395" />
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/drawable/ic_icon_main.xml" value="0.196" />
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/drawable/ic_image_empty.xml" value="0.249" />
@@ -22,22 +24,27 @@
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/activity_sign_in.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/activity_sign_up.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/activity_splash_screen.xml" value="0.24456521739130435" />
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/adapter_consultation.xml" value="0.536" />
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/adapter_good_news.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/adapter_hospitals.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/adapter_list_doctors.xml" value="0.4" />
-        <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/adapter_top_rated_doctor.xml" value="0.6" />
+        <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/adapter_list_messages.xml" value="0.4" />
+        <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/adapter_top_rated_doctor.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/fragment_dashboard.xml" value="0.21666666666666667" />
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/fragment_doctor.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/fragment_doctor_profile.xml" value="0.264" />
+        <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/fragment_doctor_profile2.xml" value="0.21927083333333333" />
+        <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/fragment_doctor_profile3.xml" value="0.21927083333333333" />
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/fragment_edit_profile.xml" value="0.176" />
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/fragment_get_started.xml" value="0.26614583333333336" />
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/fragment_home.xml" value="0.21666666666666667" />
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/fragment_hospitals.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/fragment_list_doctor.xml" value="0.176" />
-        <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/fragment_messages.xml" value="0.20104166666666667" />
+        <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/fragment_messages.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/fragment_notifications.xml" value="0.21666666666666667" />
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/fragment_profile.xml" value="0.264" />
-        <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/fragment_sign_in.xml" value="0.26614583333333336" />
+        <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/fragment_sign_in.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/fragment_sign_up.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/fragment_sign_up_photo.xml" value="0.176" />
         <entry key="..\:/AndroidStudioProject/Portofolio/MyDoctor/app/src/main/res/layout/splash_screen.xml" value="0.2" />
